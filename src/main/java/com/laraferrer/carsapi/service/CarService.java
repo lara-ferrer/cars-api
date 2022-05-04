@@ -9,6 +9,7 @@ import java.util.List;
 public interface CarService {
     List<Car> findAllCars();
     Car addCar(Car car);
+    List<Car> findCarByBrand(String brand) throws CarNotFoundException;
     Car modifyCar(long carId, Car car) throws CarNotFoundException;
     void patchCar(long carId, CarPatchDTO carPatchDTO) throws CarNotFoundException;
     void deleteCarById(long carId) throws CarNotFoundException;

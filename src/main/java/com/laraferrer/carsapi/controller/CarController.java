@@ -24,6 +24,14 @@ public class CarController {
         return ResponseEntity.ok(cars);
     }
 
+    @GetMapping(value = "/car/{brand}")
+    public ResponseEntity<List<Car>> getCarByBrand(@PathVariable String brand) throws CarNotFoundException {
+        List<Car> cars = null;
+        cars = carService.findCarByBrand(brand);
+
+        return ResponseEntity.ok(cars);
+    }
+
     @PostMapping(value = "/car")
     public ResponseEntity<Car> addCar(@RequestBody Car car) {
         Car newCar = carService.addCar(car);

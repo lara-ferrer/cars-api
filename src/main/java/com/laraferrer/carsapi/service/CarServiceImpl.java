@@ -21,6 +21,12 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
+    public List<Car> findCarByBrand(String brand) throws CarNotFoundException {
+        List<Car> selectedCars = carRepository.findByBrand(brand);
+        return selectedCars;
+    }
+
+    @Override
     public Car addCar(Car car) {
         return carRepository.save(car);
     }
