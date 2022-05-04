@@ -8,11 +8,11 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.laraferrer.wheretoeat</groupId>
-	<artifactId>wheretoeat</artifactId>
+	<groupId>com.laraferrer.carsapi</groupId>
+	<artifactId>carsapi</artifactId>
 	<version>0.1</version>
-	<name>wheretoeat</name>
-	<description>API made for a application that shows users an available list of restaurants on the city of their choose.</description>
+	<name>carsapi</name>
+	<description>API made for a application that lets users shop and sell cars.</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

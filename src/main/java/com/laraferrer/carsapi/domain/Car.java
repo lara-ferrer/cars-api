@@ -1,4 +1,4 @@
-package com.laraferrer.wheretoeat.domain;
+package com.laraferrer.carsapi.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,22 +10,21 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "restaurants")
-public class Restaurant {
-
+@Entity(name = "cars")
+public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column
-    private String name;
+    private String brand;
     @Column
-    private String address;
+    private String model;
     @Column
-    private String city;
+    private String color;
     @Column
-    private String phone;
+    private int kilometers;
     @Column
-    private String email;
+    private LocalDate manufacturingDate;
     @Column
-    private int categoryId;
+    private int price;
 }
