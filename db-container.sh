@@ -1,1 +1,0 @@
-docker run -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=Examen1234*' -e 'MSSQL_PID=Developer' -e 'MSSQL_USER=SA' -p 5563:1433 -d --name=cars-db mcr.microsoft.com/azure-sql-edge
