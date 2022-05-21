@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App
+name: Build and deploy JAR app to Azure Web App - cars-api
 
 on:
   push:
@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'cars-api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CC2ECB3F10F43F1BF15358E89D45CD3 }}
           package: '*.jar'
